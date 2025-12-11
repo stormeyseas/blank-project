@@ -1,10 +1,9 @@
-library(ggplot2)
+library(tidyverse)
 library(terra)
-library(rnaturalearth)
 library(ozmaps)
 library(paletteer)
-library(scales)
 
+# Shortcut plotting functions
 prettyplot <- function() {
   theme_classic() +
     theme(
@@ -31,3 +30,5 @@ rm_x_axis <- function() {
     axis.ticks.x = element_blank()
   )
 }
+
+# Functions for nicer mapping

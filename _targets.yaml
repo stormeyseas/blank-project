@@ -1,4 +1,3 @@
 project_1:
-  script: pipelines/targets_pipeline_1.R
+  script: targets_pipelines/pipeline_1.R
   store: targets_outputs/project_1
-

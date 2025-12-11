@@ -1,14 +1,14 @@
 project:
   type: default
-  output-dir: rendered-documentation
+  output-dir: docs-rendered
   render: 
-    - index.qmd
-    - documentation/page_1.qmd
+    - docs-working/index.qmd
+    - docs-working/page_1.qmd
 
 format:
   html:
     theme: simplex
-    css: ["documentation/extra.css"]
+    css: ["docs-working/extra.css"]
     embed-resources: true
     code-fold: true
     code-overflow: wrap
@@ -27,10 +27,10 @@ execute:
   eval: true
   cache: true # quarto render --cache-refresh
 
-bibliography: ["documentation/refs.bib", "documentation/manual-refs.bib"]
+bibliography: ["docs-working/refs.bib", "docs-working/manual-refs.bib"]
 
 knitr: 
   opts_chunk:
     fig.align: center
-    fig.height: 8
-    fig.width: 7
+    fig.height: 8.5
+    fig.width: 7.5

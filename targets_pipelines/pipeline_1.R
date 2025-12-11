@@ -2,7 +2,6 @@ library(targets)
 library(tarchetypes)
 library(geotargets)
 library(crew)
-library(qs2)
 library(here)
 
 tar_option_set(
